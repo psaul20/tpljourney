@@ -3907,7 +3907,7 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
 }
 
 #main > .post {
-  padding: 8rem 8rem 6rem 8rem;
+  padding: 8rem 12rem 6rem 12rem;
 }
 
 #main > .post header.major > .date {
@@ -3925,9 +3925,27 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
   text-align: center;
 }
 
+@media screen and (min-width: 1681px) {
+  #main > .post {
+    padding: 8rem 16rem 6rem 16rem;
+  }
+}
+
+@media screen and (min-width: 1281px) and (max-width: 1680px) {
+  #main > .post {
+    padding: 8rem 12rem 6rem 12rem;
+  }
+}
+
 @media screen and (max-width: 1280px) {
   #main > .post {
-    padding: 6rem 4rem 4rem 4rem;
+    padding: 6rem 6rem 4rem 6rem;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #main > .post {
+    padding: 5rem 3rem 3rem 3rem;
   }
 }
 
@@ -3946,6 +3964,12 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     font-size: 2.5rem;
     line-height: 1.2;
     margin: 0 0 1.5rem 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #main > .post {
+    padding: 3rem 1.5rem 2rem 1.5rem;
   }
 }
 
@@ -4807,3 +4831,4 @@ body.is-preload #intro:not(.hidden) + #header + #nav {
     visibility: visible;
   }
 }
+
